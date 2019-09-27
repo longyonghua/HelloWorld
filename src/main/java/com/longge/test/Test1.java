@@ -10,6 +10,26 @@ import java.util.Enumeration;
  * thanks for your food 注释示例
  * */
 public class Test1 {
+
+    @Test
+    public void test3(){
+        Test1 test = new Test1();
+        System.out.println(test.getClass()); //class com.longge.test.Test1
+        Test1[] tests = new Test1[1];
+        System.out.println(tests.getClass()); //class [Lcom.longge.test.Test1;
+        Test1[][] test1s = new Test1[1][1];
+        System.out.println(test1s); //[[Lcom.longge.test.Test1;@6ee52dcd
+
+        int[] ints = new int[1];
+        System.out.println(ints); //[I@4493d195
+        char[] chars = new char[1];
+        System.out.println(chars);
+        byte[] bytes = new byte[1];
+        System.out.println(bytes); //[B@2781e022
+        boolean[] booleans = new boolean[1];
+        System.out.println(booleans); //[Z@57e1b0c
+    }
+
     @Test
     public void test1(){
         ClassLoader classLoader = ClassLoader.getSystemClassLoader();
